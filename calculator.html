@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+    <h1 class="text-center mt-5">Budget Calculator</h1>
+    <form id="budget-form" class="text-center">
+        <label for="income" class="d-block">Monthly Income:</label>
+        <input type="number" id="income" class="input-field mb-2"><br>
+        <label for="utility" class="d-block">Utility Bills:</label>
+        <input type="number" id="utility" class="input-field mb-2"><br>
+        <label for="groceries" class="d-block">Groceries:</label>
+        <input type="number" id="groceries" class="input-field mb-2"><br>
+        <label for="rent" class="d-block">House Rent:</label>
+        <input type="number" id="rent" class="input-field mb-2"><br>
+        <label for="petrol" class="d-block">Car Petrol:</label>
+        <input type="number" id="petrol" class="input-field mb-2"><br>
+        <label for="other" class="d-block">Other Spendings:</label>
+        <input type="number" id="other" class="input-field mb-2"><br>
+        <button type="button" id="calculate" class="calculate-button btn btn-success mt-3">Calculate</button>
+    </form>
+    <div id="result" class="text-center mt-4">
+        <p>Money Spent: <span id="spent"></span></p>
+        <p>Savings: <span id="savings"></span></p>
+    </div>
+</body>
+</html>
